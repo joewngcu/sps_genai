@@ -11,3 +11,5 @@ wheels/
 *.pyc
 .DS_Store
 .env
+# Local datasets
+data/
