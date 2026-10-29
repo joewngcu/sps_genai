@@ -4,9 +4,11 @@ from pydantic import BaseModel, Field
 from app.bigram_model import BigramModel
 from app.embedding_model import calculate_embedding
 from app.image_classifier import router as image_router
+from app.digit_generator import router as digit_router
 
 app = FastAPI()
 app.include_router(image_router)
+app.include_router(digit_router)
 
 # Sample corpus from the class activity.
 corpus = [
